@@ -6,10 +6,7 @@ public class MoveControl : MonoBehaviour
     private float speed = 10.0f;
     [SerializeField]
     private float rotationSpeed = 90.0f;
-    void Start()
-    {
-        
-    }
+
 
     void Update()
     {

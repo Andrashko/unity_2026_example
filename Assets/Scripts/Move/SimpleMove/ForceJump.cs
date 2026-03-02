@@ -8,16 +8,15 @@ public class ForceJump : MonoBehaviour
     private GameObject groundDetector = null;
     private Rigidbody rb;
 
-    private bool isGrounded = false;
     [SerializeField]
     private string groundTag = "Ground";
+    private bool isGrounded = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         if (groundDetector == null || rb == null)
             Debug.LogWarning("Error, do not jump");
-
     }
 
     void Update()
